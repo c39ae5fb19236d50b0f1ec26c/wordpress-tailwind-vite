@@ -1,6 +1,6 @@
 <?php
 
-# adding tailwind styles
+# add tailwind styles
 function enqueue_tailwind_styles() {
     $manifest_path = get_stylesheet_directory() . '/dist/manifest.json';
 
@@ -14,9 +14,14 @@ function enqueue_tailwind_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_tailwind_styles' );
 
-# registering menu on admin console
+# register menu on admin console
 function register_my_menu() {
     register_nav_menu('main-menu',__( 'Main menu' ));
   }
   add_action( 'init', 'register_my_menu' );
 
+# add sticky menu script
+function my_theme_scripts() {
+    wp_enqueue_script( 'my-script', get_template_directory_uri() . '/js/sticky-menu.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
