@@ -8,7 +8,7 @@
         echo '<h1 class="mt-10 entry-title underline text-2xl hover:text-sky-900"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h1>';
         ?>
         <div class="mt-10">
-          <?php the_excerpt(); ?>
+          <?php the_content(); ?>
         </div>
         <?php
       }

@@ -1,0 +1,15 @@
+{
+  "name": "my-custom-block",
+  "version": "1.0.0",
+  "description": "",
+  "main": "block.js",
+  "scripts": {
+    "build": "wp-scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.6.0"
+  }
+}
