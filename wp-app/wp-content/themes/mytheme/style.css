@@ -1,0 +1,16 @@
+/*
+Theme Name: My Theme (tailwind css)
+Theme URI: https://kezzlock.com/
+Author: Michał Koper
+Author URI: http://kezzlock.com/
+Description: Theme requested for 'Wordpress Developer' job offer.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mytheme
+*/
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
