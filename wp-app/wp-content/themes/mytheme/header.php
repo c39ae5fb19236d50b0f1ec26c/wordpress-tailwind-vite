@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo( 'name' ); ?></title>
 	<?php wp_head() ?>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body <?php body_class(); ?>  >
-<nav class="bg-sky-900 sticky" id="navbar">
+<nav class="bg-sky-900 sticky transition-all duration-300 ease-in-out z-50" id="navbar">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="flex items-center">

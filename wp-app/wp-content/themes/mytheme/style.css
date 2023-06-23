@@ -14,3 +14,39 @@ Text Domain: mytheme
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    background-color: skyblue;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    padding: 16px;
+}
+
+.prev-button {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next-button {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh;  */
+    text-align: center;
+}
